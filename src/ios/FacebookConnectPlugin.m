@@ -542,7 +542,7 @@
         			NSLog(@"photo_image cannot be decoded");
         		} else {
         			photo.image = [UIImage imageWithData:photoImageData];
-        			photo.isUserGenerated = YES;
+        			photo.userGenerated = YES;
         		}
         	}
         	FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
