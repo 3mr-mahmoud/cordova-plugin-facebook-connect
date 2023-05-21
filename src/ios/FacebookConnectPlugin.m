@@ -551,7 +551,7 @@
         } else {
         	FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
         	content.contentURL = [NSURL URLWithString:params[@"href"]];
-            content.hashtag = [[FBSDKHashtag alloc] initWithString:[params objectForKey:@"hashtag"]];
+            content.hashtag = [[FBSDKHashtag alloc] hashtagWithString:[params objectForKey:@"hashtag"]];
         	content.quote = params[@"quote"];
         	dialog.shareContent = content;
         }
